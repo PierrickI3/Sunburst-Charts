@@ -4,11 +4,11 @@
   body
   {
     font-family:Century Gothic,Arial,Helvetica,sans-serif;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   p
   {
-    margin-top:20px;
+    margin-top:0px;
     font-size:1.2em;
   }
   form
@@ -178,11 +178,11 @@
 
         slices.append("text")
           .classed('label', true)
-          .style("font-size", "10px")
+          .style("font-size", "9px")
       	  .attr("x", function(d) { return d[1]; })
           .attr("text-anchor", "middle")
       		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")" + "rotate(" + getAngle(d) + ")"; })
-      		.attr("dx", "0") // margin
+      		.attr("dx", "-5") // margin
       		.attr("dy", ".35em") // vertical-align
       		.text(function(d){return d[2]})
           .attr("pointer-events","none");
@@ -679,37 +679,44 @@
       ];
 
       heriarchy_2016 = [
-        "Shahzad Ahmad",
+        "Shahzad (161)",
         100000,
         100000,
         {
           "PSO": [
-            "PSO",
-            20000,
-            20000,
+            "PSO (33)",
+            15000,
+            15000,
             {
               "wolfgang": [
-                "Wolgang Balduin",
-                10000,
-                10000,
+                "Wolgang",
+                7500,
+                7500,
                 {
                   "PMs": [
                     "PMs (10)",
-                    5000,
-                    5000,
+                    3500,
+                    3500,
                     {
                     }
                   ],
                   "AppDevMgr": [
-                    "Robert",
-                    5000,
-                    5000,
+                    "App Dev",
+                    4000,
+                    4000,
                     {
-                      "AppDevSEs": [
-                        "SEs (5)",
-                        5000,
-                        5000,
+                      "Robert": [
+                        "Robert",
+                        4000,
+                        4000,
                         {
+                          "AppDevSEs": [
+                            "Dev (5)",
+                            4000,
+                            4000,
+                            {
+                            }
+                          ]
                         }
                       ]
                     }
@@ -717,19 +724,19 @@
                 }
               ],
               "craig": [
-                "Craig Stevenson",
-                10000,
-                10000,
+                "Craig",
+                7500,
+                7500,
                 {
                   "PureCloud": [
                     "PureCloud",
-                    5000,
-                    5000,
+                    3750,
+                    3750,
                     {
                       "ImplementationPC": [
                         "ICs (2)",
-                        5000,
-                        5000,
+                        3750,
+                        3750,
                         {
                         }
                       ]
@@ -737,13 +744,13 @@
                   ],
                   "CICCaaS": [
                     "CIC/CaaS",
-                    5000,
-                    5000,
+                    3750,
+                    3750,
                     {
                       "ImplementationPC": [
                         "ICs (13)",
-                        5000,
-                        5000,
+                        3750,
+                        3750,
                         {
                         }
                       ]
@@ -754,19 +761,19 @@
             }
           ],
           "Support": [
-            "Support",
-            20000,
-            20000,
+            "Support (57)",
+            25500,
+            25500,
             {
               "Daniel": [
                 "Daniel Chen",
-                20000,
-                20000,
+                25500,
+                25500,
                 {
                   "John": [
                     "John",
-                    5000,
-                    5000,
+                    9650,
+                    9650,
                     {
                       "PEs": [
                         "PEs (3)",
@@ -775,15 +782,29 @@
                         {
                         }
                       ],
-                      "TTMs": [
-                        "TTMs (2)",
-                        2500,
-                        2500,
+                      "Seb": [
+                        "Seb. (UK)",
+                        3575,
+                        3575,
                         {
                           "SEs": [
-                            "SEs (18)",
-                            2500,
-                            2500,
+                            "SEs (11)",
+                            3575,
+                            3575,
+                            {
+                            }
+                          ]
+                        }
+                      ],
+                      "Hans": [
+                        "Hans (NL)",
+                        3575,
+                        3575,
+                        {
+                          "SEs": [
+                            "SEs (7)",
+                            3575,
+                            3575,
                             {
                             }
                           ]
@@ -793,8 +814,8 @@
                   ],
                   "Kendra": [
                     "Kendra",
-                    5000,
-                    5000,
+                    9650,
+                    9650,
                     {
                       "PEs": [
                         "PEs (3)",
@@ -803,15 +824,29 @@
                         {
                         }
                       ],
-                      "TTMs": [
-                        "TTMs (2)",
-                        2500,
-                        2500,
+                      "Alex": [
+                        "Alex (DACH)",
+                        3575,
+                        3575,
                         {
                           "SEs": [
-                            "SEs (19)",
-                            2500,
-                            2500,
+                            "SEs (8)",
+                            3575,
+                            3575,
+                            {
+                            }
+                          ]
+                        }
+                      ],
+                      "Adam": [
+                        "Adam (UK)",
+                        3575,
+                        3575,
+                        {
+                          "SEs": [
+                            "SEs (11)",
+                            3575,
+                            3575,
                             {
                             }
                           ]
@@ -821,13 +856,13 @@
                   ],
                   "Marco": [
                     "Marco",
-                    5000,
-                    5000,
+                    2800,
+                    2800,
                     {
-                      "Dariusz": [
-                        "Dariusz",
-                        5000,
-                        5000,
+                      "SEs": [
+                        "SEs (1)",
+                        2800,
+                        2800,
                         {
                         }
                       ]
@@ -835,8 +870,8 @@
                   ],
                   "SDMs": [
                     "SDMs (5)",
-                    5000,
-                    5000,
+                    3400,
+                    3400,
                     {
                     }
                   ],
@@ -845,153 +880,229 @@
             }
           ],
           "SalesOps": [
-            "Sales Ops",
-            20000,
-            20000,
+            "Sales Ops (43)",
+            41000,
+            41000,
             {
               "Deon": [
-                "Deon",
-                3333,
-                3333,
+                "Deon (SA)",
+                5000,
+                5000,
                 {
+                  "SEs": [
+                    "SEs (3)",
+                    5000,
+                    5000,
+                    {
+                    }
+                  ],
                 }
               ],
               "Marko": [
-                "Marko",
-                3333,
-                3333,
+                "Marko (SE&B)",
+                6000,
+                6000,
                 {
+                  "SEs": [
+                    "SEs (10)",
+                    6000,
+                    6000,
+                    {
+                    }
+                  ],
                 }
               ],
               "Leszek": [
-                "Leszek",
-                3333,
-                3333,
+                "Leszek (EE)",
+                5500,
+                5500,
                 {
+                  "SEs": [
+                    "SEs (2)",
+                    5500,
+                    5500,
+                    {
+                    }
+                  ],
+                }
+              ],
+              "Nordics": [
+                "Dan (N)",
+                5000,
+                5000,
+                {
+                  "SEs": [
+                    "SEs (1)",
+                    5000,
+                    5000,
+                    {
+                    }
+                  ],
                 }
               ],
               "Shailesh": [
-                "Shailesh",
-                3333,
-                3333,
+                "Shail. (UK)",
+                5500,
+                5500,
                 {
+                  "SEs": [
+                    "SEs (5)",
+                    5500,
+                    5500,
+                    {
+                    }
+                  ],
                 }
               ],
               "Heiko": [
-                "Heiko",
-                3333,
-                3333,
+                "Heiko (D)",
+                5000,
+                5000,
                 {
+                  "SEs": [
+                    "SEs (3)",
+                    5000,
+                    5000,
+                    {
+                    }
+                  ],
                 }
               ],
               "Experts": [
                 "Experts",
-                3333,
-                3333,
+                9000,
+                9000,
                 {
                   "CCenter": [
-                    "C. Center",
-                    1111,
-                    1111,
+                    "Peter",
+                    3000,
+                    3000,
                     {
-                      "Simon": [
-                        "Simon",
-                        1111,
-                        1111,
+                      "Experts": [
+                        "Experts (5)",
+                        3000,
+                        3000,
                         {
                         }
                       ]
                     }
                   ],
                   "EMs": [
-                    "EMs",
-                    1111,
-                    1111,
+                    "Sami",
+                    3000,
+                    3000,
                     {
+                      "EMs": [
+                        "EMs (3)",
+                        3000,
+                        3000,
+                        {
+                        }
+                      ]
                     }
                   ],
                   "Dev": [
-                    "Dev",
-                    1111,
-                    1111,
+                    "Pierrick",
+                    3000,
+                    3000,
                     {
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "Evren": [
-            "Evren",
-            20000,
-            20000,
-            {
-              "Janty": [
-                "Janty",
-                10000,
-                10000,
-                {
-                  "PSO": [
-                    "PSO",
-                    5000,
-                    5000,
-                    {
-                    }
-                  ],
-                  "Support": [
-                    "Support",
-                    5000,
-                    5000,
-                    {
-                      "SEs": [
+                      "DevSEs": [
                         "SEs (2)",
-                        2500,
-                        2500,
-                        {
-                        }
-                      ],
-                      "PH": [
-                        "PH (5)",
-                        2500,
-                        2500,
+                        3000,
+                        3000,
                         {
                         }
                       ]
                     }
                   ]
                 }
-              ],
-              "SalesOps": [
-                "Sales Ops (2)",
-                10000,
-                10000,
-                {
-                }
               ]
             }
           ],
-          "Nico": [
-            "Nico",
-            20000,
-            20000,
+          "Middle East": [
+            "M. East (12)",
+            9500,
+            9500,
             {
-              "Support": [
-                "Support (2)",
-                10000,
-                10000,
+              "Evren": [
+                "Evren",
+                9500,
+                9500,
                 {
+                  "Janty": [
+                    "Janty",
+                    4750,
+                    4750,
+                    {
+                      "PSO": [
+                        "PSO",
+                        2375,
+                        2375,
+                        {
+                        }
+                      ],
+                      "Support": [
+                        "Support",
+                        2375,
+                        2375,
+                        {
+                          "SEs": [
+                            "SEs (2)",
+                            1187,
+                            1187,
+                            {
+                            }
+                          ],
+                          "PH": [
+                            "PH (5)",
+                            1187,
+                            1187,
+                            {
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "SalesOps": [
+                    "S. Ops (2)",
+                    4750,
+                    4750,
+                    {
+                    }
+                  ]
                 }
               ],
-              "PSO": [
-                "PSO (13)",
-                10000,
-                10000,
+            }
+          ],
+          "Africa": [
+            "Africa (16)",
+            9000,
+            9000,
+            {
+              "Nico": [
+                "Nico",
+                9000,
+                9000,
                 {
+                  "Support": [
+                    "Sup (2)",
+                    4500,
+                    4500,
+                    {
+                    }
+                  ],
+                  "PSO": [
+                    "PSO (13)",
+                    4500,
+                    4500,
+                    {
+                    }
+                  ]
                 }
               ]
             }
           ]
-
         }
       ];
 
