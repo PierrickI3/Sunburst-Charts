@@ -103,7 +103,67 @@
         var max_depth=50;
         var data_slices = [];
         var max_level = 10;
-        var color = d3.scale.category20c();
+
+        var colors = {
+          "Shahzad (158)": "#FFD700",
+          "PSO (27)": "#3667b1",
+          "Wolgang": "#5687d1",
+          "PMs (10)": "#6697e1",
+          "Craig": "#5687d1",
+          "PureCloud": "#6697e1",
+          "ICs (2)": "#76a7f1",
+          "CIC/CaaS": "#6697e1",
+          "ICs (13)": "#76a7f1",
+          "Support (57)": "#de783b",
+          "Daniel Chen": "#fe985b",
+          "John": "#feb87b",
+          "PEs (3)": "#de783b",
+          "Seb. (UK)": "#fed89b",
+          "SEs (11)": "#fef8cb",
+          "Hans (NL)": "#fed89b",
+          "SEs (7)": "#fef8cb",
+          "Kendra": "#feb87b",
+          "PEs (3)": "#fed89b",
+          "Alex (DACH)": "#fed89b",
+          "SEs (8)": "#fef8cb",
+          "Adam (UK)": "#fed89b",
+          "SEs (11)": "#fef8cb",
+          "Marco": "#feb87b",
+          "SEs(1)": "#fed89b",
+          "SDMs (5)": "#feb87b",
+          "Sales Ops (46)": "#6ab975",
+          "Deon (SA)": "#8ad995",
+          "SEs (3)": "#aaf9b5",
+          "Marko (SE&B)": "#8ad995",
+          "SEs (10)": "#aaf9b5",
+          "Leszek (EE)": "#8ad995",
+          "SEs(2)": "#aaf9b5",
+          "Dan (N)": "#8ad995",
+          "SEs (1)": "#aaf9b5",
+          "Shail. (UK)": "#8ad995",
+          "SEs (5)": "#aaf9b5",
+          "Heiko (D)": "#8ad995",
+          "SEs (3)": "#aaf9b5",
+          "Experts (16)": "#8ad995",
+          "Peter": "#aaf9b5",
+          "Experts (5)": "#caf9d5",
+          "Sami": "#aaf9b5",
+          "EMs (3)": "#caf9d5",
+          "Pierrick": "#aaf9b5",
+          "Dev (5)": "#caf9d5",
+          "M. East (12)": "#a173d1",
+          "Evren": "#c193f1",
+          "Janty": "#e1b3f1",
+          "PSO": "#f1d3f1",
+          "Support": "#f1d3f1",
+          "SEs (2)": "#f9e3f9",
+          "PH (5)": "#f9e3f9",
+          "S. Ops (2)": "#e1b3f1",
+          "Africa (16)": "#7b615c",
+          "Nico": "#9b817c",
+          "Sup (2)": "#bba19c",
+          "PSO (13)": "#bba19c"
+        };
 
         var svg = d3.select("#"+element_id).append("svg")
             .attr("width", width)
@@ -170,7 +230,7 @@
         slices.append("path")
           .attr("d", arc)
           .attr("id",function(d,i){return d[2]+""+i;})
-          .style("fill", function(d) { return color(d[2]);})
+          .style("fill", function(d) { return colors[d[2]];})
           .on("click",animate)
           .attr("class","form")
           .append("svg:title")
@@ -839,7 +899,7 @@
                     2800,
                     {
                       "SEs": [
-                        "SEs (1)",
+                        "SEs(1)",
                         2800,
                         2800,
                         {
@@ -897,7 +957,7 @@
                 5500,
                 {
                   "SEs": [
-                    "SEs (2)",
+                    "SEs(2)",
                     5500,
                     5500,
                     {
