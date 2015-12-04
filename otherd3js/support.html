@@ -105,7 +105,7 @@
         var max_level = 10;
 
         var colors = {
-          "Shahzad (161)": "#FFD700",
+          "EMEA Operations Shahzad (161)": "#FFD700",
           "PSO (33)": "#3667b1",
           "Wolgang": "#5687d1",
           "PMs (10)": "#6697e1",
@@ -144,7 +144,7 @@
           "SEs (1)": "#aaf9b5",
           "Shail. (UK)": "#8ad995",
           "SEs (5)": "#aaf9b5",
-          "Heiko (DE)": "#8ad995",
+          "Heiko (DACH)": "#8ad995",
           "SEs (3)": "#aaf9b5",
           "Experts (13)": "#8ad995",
           "PeterT": "#aaf9b5",
@@ -215,7 +215,7 @@
         var next_ref = ref;
         var last_refs = [];
 
-        var thickness = width/2.0/(max_level+2)*1.1;
+        var thickness = width/2.0/(max_level+2)*1.8;
 
         var arc = d3.svg.arc()
           .startAngle(function(d) { if(d[3]==0){return d[0];}return d[0]+0.01; })
@@ -240,7 +240,7 @@
 
         slices.append("text")
           .classed('label', true)
-          .style("font-size", "11px")
+          .style("font-size", "20px")
       	  .attr("x", function(d) { return d[1]; })
           .attr("text-anchor", "middle")
       		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")" + "rotate(" + getAngle(d) + ")"; })
@@ -250,8 +250,8 @@
           .attr("pointer-events","none");
 
         function getAngle(d) {
-          //var thetaDeg = (180 / Math.PI * (arc.startAngle()(d) + arc.endAngle()(d)) / 2 - 90);
-          var thetaDeg = (180 / Math.PI * (arc.startAngle()(d) + arc.endAngle()(d)) / 2);
+          var thetaDeg = (180 / Math.PI * (arc.startAngle()(d) + arc.endAngle()(d)) / 2 - 90);
+          if (thetaDeg == 90) thetaDeg = 0; // That's ugly but I need this to fix the string in the first circle
           return (thetaDeg > 90) ? thetaDeg - 180 : thetaDeg;
         }
 
@@ -741,7 +741,7 @@
       ];
 
       heriarchy_2016 = [
-        "Shahzad (161)",
+        "EMEA Operations Shahzad (161)",
         100000,
         100000,
         {
@@ -1010,7 +1010,7 @@
                 }
               ],
               "Heiko": [
-                "Heiko (DE)",
+                "Heiko (DACH)",
                 5000,
                 5000,
                 {
