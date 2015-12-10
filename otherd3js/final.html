@@ -105,8 +105,8 @@
         var max_level = 10;
 
         var colors = {
-          "Shahzad (157)": "#FFD700",
-          "PSO (29)": "#3667b1",
+          "Shahzad (160)": "#FFD700",
+          "PSO (22)": "#3667b1",
           "Wolgang": "#5687d1",
           "PMs (10)": "#6697e1",
           "Dev (4)": "#6697e1",
@@ -114,7 +114,7 @@
           "PureCloud": "#6697e1",
           "ICs (2)": "#76a7f1",
           "CIC/CaaS": "#6697e1",
-          "ICs (11)": "#76a7f1",
+          "ICs (10)": "#76a7f1",
           "Support (57)": "#de783b",
           "Daniel Chen": "#fe985b",
           "John": "#feb87b",
@@ -132,7 +132,7 @@
           "Marco": "#fe985b",
           "SEs(1)": "#feb87b",
           "SDMs (5)": "#feb87b",
-          "Sales Ops (43)": "#6ab975",
+          "Sales Ops (50)": "#6ab975",
           "Deon (SA)": "#8ad995",
           "SEs (3)": "#aaf9b5",
           "Marko (SE&B)": "#8ad995",
@@ -145,13 +145,13 @@
           "SEs (5)": "#aaf9b5",
           "Heiko (DE)": "#8ad995",
           "SEs (3)": "#aaf9b5",
-          "Experts (13)": "#8ad995",
+          "Experts (19)": "#8ad995",
           "PeterT": "#aaf9b5",
           "Cloud CC (5)": "#caf9d5",
-          "Sami": "#aaf9b5",
-          "EMs (3)": "#caf9d5",
+          "Deon": "#aaf9b5",
+          "Consultant (1)": "#caf9d5",
           "Pierrick": "#aaf9b5",
-          "Dev (2)": "#caf9d5",
+          "ECCs (10)": "#caf9d5",
           "M. East (12)": "#a173d1",
           "Evren": "#c193f1",
           "Janty": "#e1b3f1",
@@ -160,10 +160,11 @@
           "SEs (2)": "#f9e3f9",
           "PH (5)": "#f9e3f9",
           "S. Ops (2)": "#e1b3f1",
-          "Africa (16)": "#7b615c",
+          "Africa (19)": "#7b615c",
           "Nico": "#9b817c",
           "Sup (2)": "#bba19c",
-          "PSO (13)": "#bba19c"
+          "PSO (13)": "#bba19c",
+          "Sales Ops (3)": "#bba19c"
         };
 
         var svg = d3.select("#"+element_id).append("svg")
@@ -740,65 +741,44 @@
       ];
 
       heriarchy_2016 = [
-        "Shahzad (157)",
+        "Shahzad (160)",
         100000,
         100000,
         {
           "PSO": [
-            "PSO (29)",
+            "PSO (22)",
             15000,
             15000,
             {
               "wolfgang": [
                 "Wolgang",
-                7500,
-                7500,
+                15000,
+                15000,
                 {
                   "PMs": [
                     "PMs (10)",
-                    3750,
-                    3750,
+                    7500,
+                    7500,
                     {
                     }
                   ],
-                  "AppDev": [
-                    "Dev (4)",
-                    3750,
-                    3750,
+                  "craig": [
+                    "Craig",
+                    7500,
+                    7500,
                     {
-                    }
-                  ],
-                }
-              ],
-              "craig": [
-                "Craig",
-                7500,
-                7500,
-                {
-                  "PureCloud": [
-                    "PureCloud",
-                    3750,
-                    3750,
-                    {
-                      "ImplementationPC": [
-                        "ICs (2)",
-                        3750,
-                        3750,
+                      "CICCaaS": [
+                        "CIC/CaaS",
+                        7500,
+                        7500,
                         {
-                        }
-                      ]
-                    }
-                  ],
-                  "CICCaaS": [
-                    "CIC/CaaS",
-                    3750,
-                    3750,
-                    {
-                      "ImplementationPC": [
-                        "ICs (11)",
-                        3750,
-                        3750,
-                        {
+                          "ImplementationPC": [
+                            "ICs (10)",
+                            7500,
+                            7500,
+                            {
+                            }
+                          ]
                         }
                       ]
                     }
@@ -927,33 +907,19 @@
             }
           ],
           "SalesOps": [
-            "Sales Ops (43)",
+            "Sales Ops (50)",
             41000,
             41000,
             {
-              "Deon": [
-                "Deon (SA)",
-                5000,
-                5000,
-                {
-                  "SEs": [
-                    "SEs (3)",
-                    5000,
-                    5000,
-                    {
-                    }
-                  ],
-                }
-              ],
               "Marko": [
                 "Marko (SE&B)",
-                6000,
-                6000,
+                7000,
+                7000,
                 {
                   "SEs": [
                     "SEs (10)",
-                    6000,
-                    6000,
+                    7000,
+                    7000,
                     {
                     }
                   ],
@@ -975,13 +941,13 @@
               ],
               "Nordics": [
                 "Dan (N)",
-                5000,
-                5000,
+                5500,
+                5500,
                 {
                   "SEs": [
                     "SEs (1)",
-                    5000,
-                    5000,
+                    5500,
+                    5500,
                     {
                     }
                   ],
@@ -1003,46 +969,46 @@
               ],
               "Heiko": [
                 "Heiko (DE)",
-                5000,
-                5000,
+                5500,
+                5500,
                 {
                   "SEs": [
                     "SEs (3)",
-                    5000,
-                    5000,
+                    5500,
+                    5500,
                     {
                     }
                   ],
                 }
               ],
               "Experts": [
-                "Experts (13)",
-                9000,
-                9000,
+                "Experts (19)",
+                12000,
+                12000,
                 {
                   "CCenter": [
                     "PeterT",
-                    3000,
-                    3000,
+                    4000,
+                    4000,
                     {
                       "Experts": [
                         "Cloud CC (5)",
-                        3000,
-                        3000,
+                        4000,
+                        4000,
                         {
                         }
                       ]
                     }
                   ],
-                  "EMs": [
-                    "Sami",
-                    3000,
-                    3000,
+                  "Deon": [
+                    "Deon",
+                    4000,
+                    4000,
                     {
-                      "EMs": [
-                        "EMs (3)",
-                        3000,
-                        3000,
+                      "Consultants": [
+                        "Consultant (1)",
+                        4000,
+                        4000,
                         {
                         }
                       ]
@@ -1050,13 +1016,13 @@
                   ],
                   "Dev": [
                     "Pierrick",
-                    3000,
-                    3000,
+                    4000,
+                    4000,
                     {
                       "DevSEs": [
-                        "Dev (2)",
-                        3000,
-                        3000,
+                        "ECCs (10)",
+                        4000,
+                        4000,
                         {
                         }
                       ]
@@ -1123,7 +1089,7 @@
             }
           ],
           "Africa": [
-            "Africa (16)",
+            "Africa (19)",
             9000,
             9000,
             {
@@ -1134,15 +1100,22 @@
                 {
                   "Support": [
                     "Sup (2)",
-                    4500,
-                    4500,
+                    3000,
+                    3000,
                     {
                     }
                   ],
                   "PSO": [
                     "PSO (13)",
-                    4500,
-                    4500,
+                    3000,
+                    3000,
+                    {
+                    }
+                  ],
+                  "SalesOps": [
+                    "Sales Ops (3)",
+                    3000,
+                    3000,
                     {
                     }
                   ]
