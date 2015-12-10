@@ -217,7 +217,7 @@
         var next_ref = ref;
         var last_refs = [];
 
-        var thickness = width/2.0/(max_level+2)*1.2;
+        var thickness = width/2.0/(max_level+2)*1.8;
 
         var arc = d3.svg.arc()
           .startAngle(function(d) { if(d[3]==0){return d[0];}return d[0]+0.01; })
@@ -242,7 +242,7 @@
 
         slices.append("text")
           .classed('label', true)
-          .style("font-size", "13px")
+          .style("font-size", "11px")
       	  .attr("x", function(d) { return d[1]; })
           .attr("text-anchor", "middle")
       		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")" + "rotate(" + getAngle(d) + ")"; })
